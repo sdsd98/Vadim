@@ -1,15 +1,21 @@
-
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* Ohraničení a pozadí za tabulkou */
+        .table-container {
+            border: 2px solid #000000; /* Černé ohraničení kolem tabulky */
+            background-color: #f0f8ff; /* Světle modré pozadí za tabulkou */
+            padding: 20px; /* Vnitřní odsazení mezi tabulkou a ohraničením */
+            margin: 20px; /* Vnější odsazení mezi tabulkou a ostatním obsahem */
+        }
+
         table {
             border-collapse: collapse; /* Sloučí okraje buněk, aby byly jediné */
             width: 100%;
-            background-color: #f0f8ff; /* Světle modré pozadí pro celou tabulku */
         }
 
         th, td {
@@ -33,21 +39,25 @@
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Bunka 1</th>
-                <th>Pondeli</th>
-                <th>Je uplne jedno co sem piseme</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Bunka 2</td>
-                <td>Utery</td>
-                <td>Nedele</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Obalíme tabulku do divu s třídou "table-container" -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Bunka 1</th>
+                    <th>Pondeli</th>
+                    <th>Je uplne jedno co sem piseme</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bunka 2</td>
+                    <td>Utery</td>
+                    <td>Nedele</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
+
