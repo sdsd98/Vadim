@@ -1,5 +1,11 @@
-.obrazek {
+.sloupce {
     width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.obrazek {
+    width: 33%;
     height: auto;
 }
 
