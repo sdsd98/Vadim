@@ -13,6 +13,8 @@
             background-color: #333;
             padding: 10px;
             border-radius: 5px;
+            justify-content: center;
+            margin-top: 10px;
         }
 
         .series-nav a {
@@ -27,30 +29,23 @@
         .series-nav a:hover {
             background-color: #777;
         }
+        
+        /* Styl pro podnadpis */
+        .series-title {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Dexter - Úvod</h1>
-    </header>
-
-    <nav class="nav">
-        <a href="#">Řada 1</a>
-        <a href="#">Řada 2</a>
-        <a href="#">Řada 3</a>
-        <a href="#">Řada 4</a>
-    </nav>
-
-    <section id="uvod">
-        <h2>O seriálu Dexter</h2>
-        <p><strong>Dexter</strong> je americký televizní seriál sledující příběh Dextera Morgena, forenzního analytika rozstřiku krve pracujícího pod miamiskou policií. Žije život dvou tváří, kde je analytik rozstřiku krve a také zároveň sériový vrah. Vraždí podle určeného kodexu který mu dal jeho nevlastní otec Harry. Čistí temné Miamské podzemí od zločinců, kteří utekli spravedlnosti.</p>
-        <p>Seriál měl premiéru v roce 2006 a získal si popularitu po celém světě, hlavně kvůli svému lákavému ději a charismatickými postavami.</p>
-    </section>
-
-    <section id="řady">
-        <h2>Řady</h2>
         
+        <!-- Podnadpis nad navigační lištou -->
+        <h2 class="series-title">Řady</h2>
+
         <!-- Navigační lišta pro řady -->
         <nav class="series-nav">
             <a href="sezona1.html">1. řada</a>
@@ -58,7 +53,12 @@
             <a href="sezona3.html">3. řada</a>
             <a href="sezona4.html">4. řada</a>
         </nav>
+    </header>
 
+    <section id="uvod">
+        <h2>O seriálu Dexter</h2>
+        <p><strong>Dexter</strong> je americký televizní seriál sledující příběh Dextera Morgena, forenzního analytika rozstřiku krve pracujícího pod miamiskou policií. Žije život dvou tváří, kde je analytik rozstřiku krve a také zároveň sériový vrah. Vraždí podle určeného kodexu, který mu dal jeho nevlastní otec Harry. Čistí temné miamské podzemí od zločinců, kteří utekli spravedlnosti.</p>
+        <p>Seriál měl premiéru v roce 2006 a získal si popularitu po celém světě, hlavně kvůli svému lákavému ději a charismatickým postavám.</p>
     </section>
 
     <footer>
@@ -70,4 +70,5 @@
 
 </body>
 </html>
+
 
