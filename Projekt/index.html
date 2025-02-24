@@ -1,33 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>seriál Dexter</title>
-    <link rel="stylesheet" href="style.css"
-</head>
-    <header>
-    <h1>Dexter - Úvod</h1>
-    </header>
-    
+    <title>Seriál Dexter</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styl pro navigační lištu řad */
+        .series-nav {
+            display: flex;
+            gap: 10px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .series-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            background-color: #555;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+
+        .series-nav a:hover {
+            background-color: #777;
+        }
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>Dexter - Úvod</h1>
+    </header>
+
     <h1>Projekt</h1>
+
     <nav class="nav">
         <a href="#">Řada 1</a>
         <a href="#">Řada 2</a>
         <a href="#">Řada 3</a>
         <a href="#">Řada 4</a>
+    </nav>
 
     <section id="uvod">
         <h2>O seriálu Dexter</h2>
         <p><strong>Dexter</strong> je americký televizní seriál sledující příběh Dextera Morgena, forenzního analytika rozstřiku krve pracujícího pod miamiskou policií. Žije život dvou tváří, kde je analytik rozstřiku krve a také zároveň sériový vrah. Vraždí podle určeného kodexu který mu dal jeho nevlastní otec Harry. Čistí temné Miamské podzemí od zločinců, kteří utekli spravedlnosti.</p>
-        <p>Seriál měl premiéru v roce 2006 a získal si popularitu po celém světě, hlavně kvůli svému lákavému ději a charismatickými postavami. </p>
+        <p>Seriál měl premiéru v roce 2006 a získal si popularitu po celém světě, hlavně kvůli svému lákavému ději a charismatickými postavami.</p>
     </section>
 
-    <section id="řady:">
+    <section id="řady">
         <h2>Řady</h2>
+        
+        <!-- Navigační lišta pro řady -->
+        <nav class="series-nav">
+            <a href="sezona1.html">1. řada</a>
+            <a href="sezona2.html">2. řada</a>
+            <a href="sezona3.html">3. řada</a>
+            <a href="sezona4.html">4. řada</a>
+        </nav>
+
         <ul>
             <li><a href="sezona1.html">1. řada</a></li>
             <li><a href="sezona2.html">2. řada</a></li>
@@ -40,9 +73,9 @@
         <p>&copy; 2025 zhodnocení a shrnutí seriálu Dexter</p>
     </footer>
 
+    <img src="https://cdn.xsd.cz/resize/1fe4be709df839478dda0d00454c5961_resize=680,383_.jpg?hash=a5a030e14cb31890a3f05940b5c305de" alt="Dexter">
+    <img src="https://static.wikia.nocookie.net/dexter/images/2/20/Michael_C._Hall.jpg/revision/latest?cb=20180227031436" alt="Dexter hlavní postava">
 
-    <img src="https://cdn.xsd.cz/resize/1fe4be709df839478dda0d00454c5961_resize=680,383_.jpg?hash=a5a030e14cb31890a3f05940b5c305de" alt="">
-    <img src="https://static.wikia.nocookie.net/dexter/images/2/20/Michael_C._Hall.jpg/revision/latest?cb=20180227031436" alt="">
-<body>
 </body>
 </html>
+
