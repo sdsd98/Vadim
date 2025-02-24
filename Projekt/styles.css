@@ -4,6 +4,23 @@ body {
     padding: 0;
     background-color: #1e1e1e;
     color: #ffffff;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px; /* Omezení šířky obsahu */
+    width: 90%; /* Aby se to přizpůsobilo menším obrazovkám */
 }
 
 header {
