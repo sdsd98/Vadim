@@ -23,3 +23,15 @@ section {
     background-color: #2e2e2e;
     border-radius: 5px;
 }
+
+/* Zarovnání celého obsahu doprostřed stránky */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
