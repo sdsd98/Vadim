@@ -6,87 +6,54 @@
     <title>Seriál Dexter</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Styl pro navigační lištu řad */
-        .series-nav {
+        /* Zarovnání textu do leva pro sekci O seriálu Dexter */
+        #uvod {
+            text-align: left; /* Text bude zarovnaný zleva */
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Zarovnání celého obsahu do středu, včetně obrázků a nadpisů */
+        body {
             display: flex;
-            gap: 10px;
-            background-color: #333;
-            padding: 10px;
-            border-radius: 5px;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
-            margin-top: 10px;
-        }
-
-        .series-nav a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 12px;
-            background-color: #555;
-            border-radius: 3px;
-            transition: background 0.3s;
-        }
-
-        .series-nav a:hover {
-            background-color: #777;
-        }
-        
-        /* Styl pro podnadpis */
-        .series-title {
             text-align: center;
-            font-size: 1.5em;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        header, section, footer {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        footer p {
+            text-align: center;
             margin-top: 20px;
         }
-        
-        <style>
-    /* Zarovnání textu do leva pro sekci O seriálu Dexter */
-    #uvod {
-        text-align: left; /* Text bude zarovnaný zleva */
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
 
-    /* Zarovnání celého obsahu do středu, včetně obrázků a nadpisů */
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        min-height: 100vh;
-        margin: 0;
-        padding: 0 20px;
-    }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: block; /* Umožní zarovnání obrázků na střed */
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    header, section, footer {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    footer p {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 20px;
-        border-radius: 8px;
-        display: block; /* Umožní zarovnání obrázků na střed */
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* Nadpisy budou zarovnané na střed */
-    h1, h2 {
-        text-align: center;
-    }
-</style>
-
+        /* Nadpisy budou zarovnané na střed */
+        h1, h2 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
