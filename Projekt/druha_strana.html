@@ -1,11 +1,95 @@
-=<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dexter - 1. řada</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styl pro navigační lištu řad */
+        .series-nav {
+            display: flex;
+            gap: 10px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .series-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            background-color: #555;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+
+        .series-nav a:hover {
+            background-color: #777;
+        }
+
+        /* Styl pro podnadpis */
+        .series-title {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        /* Zarovnání celého obsahu doprostřed stránky */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0 20px; /* Nastaví okraje kolem stránky */
+        }
+
+        header, section, footer {
+            width: 100%;
+            max-width: 1200px; /* Nastaví maximální šířku obsahu */
+            margin: 0 auto; /* Umožní zarovnání do středu */
+            padding: 20px;
+        }
+
+        footer p {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Dexter - 1. řada</h1>
+
+        <!-- Podnadpis nad navigační lištou -->
+        <h2 class="series-title">Řady</h2>
+
+        <!-- Navigační lišta pro řady -->
+        <nav class="series-nav">
+            <a href="index.html">Úvod</a>
+            <a href="sezona1.html">1. řada</a>
+            <a href="sezona2.html">2. řada</a>
+            <a href="sezona3.html">3. řada</a>
+            <a href="sezona4.html">4. řada</a>
+        </nav>
+    </header>
+
+    <section id="uvod">
+        <h2>O 1. řadě</h2>
+        <p><strong>1. řada</strong> sleduje začátek příběhu Dextera Morgana, který vyšetřuje zločiny jako forenzní analytik, ale zároveň tajně vykonává svou vlastní formu spravedlnosti. Tato řada se zaměřuje na jeho první velkou konfrontaci s vrahem, který mu ve mnohém připomíná jeho vlastní temnou stránku. Dexter se ocitá v neustálé vnitřní bitvě mezi tím, co je správné a tím, co mu přináší uspokojení.</p>
+        <p>Diváci jsou svědky, jak Dexter začíná vytvářet svůj vlastní kodex, podle kterého vybírá své oběti a čistí město od nebezpečných zločinců, kteří unikli spravedlnosti.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 zhodnocení a shrnutí seriálu Dexter - 1. řada</p>
+    </footer>
+
 </body>
 </html>
+
