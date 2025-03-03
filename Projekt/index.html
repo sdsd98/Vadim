@@ -67,6 +67,24 @@
             margin-top: 20px;
             border-radius: 8px; /* Zaoblení rohů obrázků */
         }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Zaoblení rohů obrázků */
+        }
+
+        /* Zmenšení druhého obrázku */
+        .image-container img.second-image {
+            max-width: 300px; /* Změní velikost druhého obrázku */
+        }
     </style>
 </head>
 <body>
@@ -95,9 +113,11 @@
     <footer>
         <p>&copy; 2025 zhodnocení a shrnutí seriálu Dexter</p>
     </footer>
-
-    <p><img src="https://cdn.xsd.cz/resize/1fe4be709df839478dda0d00454c5961_resize=680,383_.jpg?hash=a5a030e14cb31890a3f05940b5c305de" alt="Dexter"></p>
-    <p><img src="https://static.wikia.nocookie.net/dexter/images/2/20/Michael_C._Hall.jpg/revision/latest?cb=20180227031436" alt="Dexter hlavní postava"></p>
+    
+    <div class="image-container">
+        <img src="https://cdn.xsd.cz/resize/1fe4be709df839478dda0d00454c5961_resize=680,383_.jpg?hash=a5a030e14cb31890a3f05940b5c305de" alt="Dexter">
+        <img class="second-image" src="https://static.wikia.nocookie.net/dexter/images/2/20/Michael_C._Hall.jpg/revision/latest?cb=20180227031436" alt="Dexter hlavní postava">
+    </div>
 
 </body>
 </html>
