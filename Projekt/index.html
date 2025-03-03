@@ -6,16 +6,38 @@
     <title>Seriál Dexter</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Zarovnání textu do leva pro sekci O seriálu Dexter */
-        #uvod {
-            text-align: left; /* Text bude zarovnaný zleva */
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        /* Styl pro navigační lištu řad */
+        .series-nav {
+            display: flex;
+            gap: 10px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            justify-content: center;
+            margin-top: 10px;
         }
 
-        /* Zarovnání celého obsahu do středu, včetně obrázků a nadpisů */
+        .series-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            background-color: #555;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+
+        .series-nav a:hover {
+            background-color: #777;
+        }
+        
+        /* Styl pro podnadpis */
+        .series-title {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        /* Zarovnání celého obsahu doprostřed stránky */
         body {
             display: flex;
             flex-direction: column;
@@ -24,13 +46,13 @@
             text-align: center;
             min-height: 100vh;
             margin: 0;
-            padding: 0 20px;
+            padding: 0 20px; /* Nastaví okraje kolem stránky */
         }
 
         header, section, footer {
             width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
+            max-width: 1200px; /* Nastaví maximální šířku obsahu */
+            margin: 0 auto; /* Umožní zarovnání do středu */
             padding: 20px;
         }
 
@@ -43,15 +65,7 @@
             max-width: 100%;
             height: auto;
             margin-top: 20px;
-            border-radius: 8px;
-            display: block; /* Umožní zarovnání obrázků na střed */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Nadpisy budou zarovnané na střed */
-        h1, h2 {
-            text-align: center;
+            border-radius: 8px; /* Zaoblení rohů obrázků */
         }
     </style>
 </head>
