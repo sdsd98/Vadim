@@ -36,18 +36,37 @@
             font-size: 1.5em;
             margin-top: 20px;
         }
-  <style>      
-    /* Zarovnání celého obsahu doprostřed stránky */
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        min-height: 100vh;
-        margin: 0;
-    }
-    </style>
+
+        /* Zarovnání celého obsahu doprostřed stránky */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0 20px; /* Nastaví okraje kolem stránky */
+        }
+
+        header, section, footer {
+            width: 100%;
+            max-width: 1200px; /* Nastaví maximální šířku obsahu */
+            margin: 0 auto; /* Umožní zarovnání do středu */
+            padding: 20px;
+        }
+
+        footer p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px; /* Zaoblení rohů obrázků */
+        }
     </style>
 </head>
 <body>
@@ -82,5 +101,3 @@
 
 </body>
 </html>
-
-
