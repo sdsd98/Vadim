@@ -3,93 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dexter - 1. řada</title>
+    <title>Dexter - Sezóna 1</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Styl pro navigační lištu řad */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+
         .series-nav {
             display: flex;
-            gap: 10px;
-            background-color: #333;
-            padding: 10px;
-            border-radius: 5px;
             justify-content: center;
-            margin-top: 10px;
+            background: #444;
+            padding: 10px;
+            gap: 15px;
         }
 
         .series-nav a {
             color: white;
             text-decoration: none;
-            padding: 8px 12px;
-            background-color: #555;
-            border-radius: 3px;
-            transition: background 0.3s;
+            padding: 10px 15px;
+            background: #666;
+            border-radius: 5px;
+            transition: 0.3s;
         }
 
         .series-nav a:hover {
-            background-color: #777;
+            background: #888;
         }
 
-        /* Styl pro podnadpis */
-        .series-title {
-            text-align: center;
-            font-size: 1.5em;
-            margin-top: 20px;
-        }
-
-        /* Zarovnání celého obsahu doprostřed stránky */
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 0 20px; /* Nastaví okraje kolem stránky */
-        }
-
-        header, section, footer {
-            width: 100%;
-            max-width: 1200px; /* Nastaví maximální šířku obsahu */
-            margin: 0 auto; /* Umožní zarovnání do středu */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
             padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        footer p {
-            text-align: center;
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
             margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .characters {
+            margin-top: 30px;
+        }
+
+        .characters h3 {
+            margin-bottom: 15px;
+        }
+
+        .characters-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .character {
+            max-width: 200px;
+            text-align: center;
+        }
+
+        .character img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            background: #222;
+            color: white;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Dexter - 1. řada</h1>
-
-        <!-- Podnadpis nad navigační lištou -->
-        <h2 class="series-title">Řady</h2>
-
-        <!-- Navigační lišta pro řady -->
-        <nav class="series-nav">
-            <a href="index.html">Úvod</a>
-            <a href="sezona1.html">1. řada</a>
-            <a href="sezona2.html">2. řada</a>
-            <a href="sezona3.html">3. řada</a>
-            <a href="sezona4.html">4. řada</a>
-        </nav>
+        <h1>Dexter - Sezóna 1</h1>
     </header>
 
-    <section id="uvod">
-        <h2>O 1. řadě</h2>
-        <p><strong>1. řada</strong> sleduje začátek příběhu Dextera Morgana, který vyšetřuje zločiny jako forenzní analytik, ale zároveň tajně vykonává svou vlastní formu spravedlnosti. Tato řada se zaměřuje na jeho první velkou konfrontaci s vrahem, který mu ve mnohém připomíná jeho vlastní temnou stránku. Dexter se ocitá v neustálé vnitřní bitvě mezi tím, co je správné a tím, co mu přináší uspokojení.</p>
-        <p>Diváci jsou svědky, jak Dexter začíná vytvářet svůj vlastní kodex, podle kterého vybírá své oběti a čistí město od nebezpečných zločinců, kteří unikli spravedlnosti.</p>
-    </section>
+    <nav class="series-nav">
+        <a href="sezona1.html">Sezóna 1</a>
+        <a href="sezona2.html">Sezóna 2</a>
+        <a href="sezona3.html">Sezóna 3</a>
+        <a href="sezona4.html">Sezóna 4</a>
+    </nav>
+
+    <div class="container">
+        <h2>Sezóna 1</h2>
+        <p>První sezóna seriálu <strong>Dexter</strong> sleduje příběh forenzního analytika Dextera Morgena, který tajně žije jako sériový vrah. Tato sezóna se zaměřuje na jeho lov Ice Truck Killera a odhalení tajemství jeho minulosti.</p>
+        
+        <div class="image-container">
+            <img src="https://cdn.xsd.cz/resize/1fe4be709df839478dda0d00454c5961_resize=680,383_.jpg" alt="Dexter Sezóna 1">
+            <img src="https://static.wikia.nocookie.net/dexter/images/2/20/Michael_C._Hall.jpg/revision/latest?cb=20180227031436" alt="Dexter hlavní postava">
+        </div>
+
+        <div class="characters">
+            <h3>Hlavní postavy 1. řady</h3>
+            <div class="characters-container">
+                <div class="character">
+                    <img src="https://static.wikia.nocookie.net/dexter/images/2/20/Michael_C._Hall.jpg/revision/latest?cb=20180227031436" alt="Dexter Morgan">
+                    <p>Dexter Morgan</p>
+                </div>
+                <div class="character">
+                    <img src="https://static.wikia.nocookie.net/dexter/images/3/3b/DebraMorgan.jpg/revision/latest?cb=20120617091329" alt="Debra Morgan">
+                    <p>Debra Morgan</p>
+                </div>
+                <div class="character">
+                    <img src="https://static.wikia.nocookie.net/dexter/images/8/89/HarryMorgan.jpg/revision/latest?cb=20120617091107" alt="Harry Morgan">
+                    <p>Harry Morgan</p>
+                </div>
+                <div class="character">
+                    <img src="https://static.wikia.nocookie.net/dexter/images/0/02/RitaBennett.jpg/revision/latest?cb=20120617091044" alt="Rita Bennett">
+                    <p>Rita Bennett</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 zhodnocení a shrnutí seriálu Dexter - 1. řada</p>
+        <p>&copy; 2025 Fan stránka seriálu Dexter</p>
     </footer>
 
 </body>
 </html>
+
 
