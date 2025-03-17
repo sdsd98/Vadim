@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epizody seriálu Dexter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Epizody seriálu Dexter</h1>
+    <nav>
+      <a href="index.html">Domů</a>
+      <a href="postavy.html">Postavy</a>
+      <a href="epizody.html">Epizody</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Sekce s filtrováním řad -->
+    <section>
+      <h2>Filtrovat epizody podle řady</h2>
+      <div class="filter-buttons">
+        <button class="filter-button" data-season="all">Všechny řady</button>
+        <button class="filter-button" data-season="1">1. řada</button>
+        <button class="filter-button" data-season="2">2. řada</button>
+        <button class="filter-button" data-season="3">3. řada</button>
+        <button class="filter-button" data-season="4">4. řada</button>
+        <button class="filter-button" data-season="5">5. řada</button>
+        <button class="filter-button" data-season="6">6. řada</button>
+        <button class="filter-button" data-season="7">7. řada</button>
+        <button class="filter-button" data-season="8">8. řada</button>
+      </div>
+    </section>
+
+    <!-- Sekce s epizodami -->
+    <section>
+      <h2>Seznam epizod</h2>
+      <div class="episode-list">
+        <!-- 1. řada -->
+        <div class="episode" data-season="1">
+          <h3>1. řada, Epizoda 1: "Dexter"</h3>
+          <p>Dexter Morgan, forenzní analytik a sériový vrah, začíná svůj dvojí život. První oběť: učitel, který unikl spravedlnosti.</p>
+        </div>
+        <div class="episode" data-season="1">
+          <h3>1. řada, Epizoda 2: "Krokodýlí slzy"</h3>
+          <p>Dexter vyšetřuje vraždu mladé dívky a zároveň plánuje svou další oběť.</p>
+        </div>
+
+        <!-- 2. řada -->
+        <div class="episode" data-season="2">
+          <h3>2. řada, Epizoda 1: "To je život"</h3>
+          <p>Dexter se snaží skrýt stopy po své noční činnosti, zatímco policie vyšetřuje vraždy, které spáchal.</p>
+        </div>
+        <div class="episode" data-season="2">
+          <h3>2. řada, Epizoda 2: "Příchod noci"</h3>
+          <p>Dexter se setkává s novým protivníkem, který ho může odhalit.</p>
+        </div>
+
+        <!-- 3. řada -->
+        <div class="episode" data-season="3">
+          <h3>3. řada, Epizoda 1: "Náš otec"</h3>
+          <p>Dexter se setkává s novým přítelem, který má podobné sklony jako on.</p>
+        </div>
+        <div class="episode" data-season="3">
+          <h3>3. řada, Epizoda 2: "Kód"</h3>
+          <p>Dexter učí svého nového přítele svůj kód, ale věci se komplikují.</p>
+        </div>
+
+        <!-- Další řady a epizody můžete přidat zde -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Fan stránka o Dexterovi. Vytvořeno jako studentský projekt.</p>
+  </footer>
+
+  <script>
+    // Skript pro filtrování epizod
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const episodes = document.querySelectorAll('.episode');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const season = button.getAttribute('data-season');
+
+        episodes.forEach(episode => {
+          if (season === 'all' || episode.getAttribute('data-season') === season) {
+            episode.style.display = 'block';
+          } else {
+            episode.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
