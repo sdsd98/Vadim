@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jumpscare Web</title>
+  <style>
+    /* Základní styly */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Tlačítko */
+    #jumpscare-button {
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    #jumpscare-button:hover {
+      background-color: #e5533d;
+    }
+
+    /* Skrytý jumpscare obrázek */
+    #jumpscare-image {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1000;
+    }
+
+    /* Skrytý zvuk */
+    #jumpscare-sound {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Tlačítko pro spuštění jumpscare -->
+  <button id="jumpscare-button">Klikni na mě!</button>
+
+  <!-- Jumpscare obrázek -->
+  <img id="jumpscare-image" src="jump.jpeg" alt="Jumpscare">
+
+  <!-- Jumpscare zvuk -->
+  <audio id="jumpscare-sound" src="sound/jumpscare-94984.mp3"></audio>
+
+  <script>
+    // JavaScript pro spuštění jumpscare
+    const button = document.getElementById('jumpscare-button');
+    const jumpscareImage = document.getElementById('jumpscare-image');
+    const jumpscareSound = document.getElementById('jumpscare-sound');
+
+    button.addEventListener('click', () => {
+      // Zobrazí obrázek
+      jumpscareImage.style.display = 'block';
+
+      // Přehraje zvuk
+      jumpscareSound.play();
+
+      // Skryje tlačítko
+      button.style.display = 'none';
+
+      // Po 2 sekundách skryje obrázek
+      setTimeout(() => {
+        jumpscareImage.style.display = 'none';
+        button.style.display = 'block';
+      }, 2000); // 2000 ms = 2 sekundy
+    });
+  </script>
+</body>
+</html>
