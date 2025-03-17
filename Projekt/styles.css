@@ -4,23 +4,23 @@ body {
     padding: 0;
     background-color: #1e1e1e;
     color: #ffffff;
-    
-}
-
-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     min-height: 100vh;
-    margin: 0;
     padding: 20px;
 }
 
+/* Přidání lehce šedých okrajů */
 main {
-    max-width: 800px; /* Omezení šířky obsahu */
-    width: 90%; /* Aby se to přizpůsobilo menším obrazovkám */
+    max-width: 800px;
+    width: 90%;
+    background-color: #2e2e2e;
+    border: 5px solid #3a3a3a; /* Lehká šedá barva */
+    border-radius: 10px;
+    padding: 20px;
 }
 
 header {
@@ -39,4 +39,5 @@ section {
     padding: 20px;
     background-color: #2e2e2e;
     border-radius: 5px;
+    border: 2px solid #3a3a3a; /* Lehce šedý okraj */
 }
