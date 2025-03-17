@@ -65,7 +65,7 @@
   <audio id="jumpscare-sound" src="sound/jumpscare-94984.mp3"></audio>
 
   <script>
-    // JavaScript pro spuštění jumpscare
+    // JavaScript pro spuštění jumpscare a přesměrování
     const button = document.getElementById('jumpscare-button');
     const jumpscareImage = document.getElementById('jumpscare-image');
     const jumpscareSound = document.getElementById('jumpscare-sound');
@@ -80,10 +80,10 @@
       // Skryje tlačítko
       button.style.display = 'none';
 
-      // Po 2 sekundách skryje obrázek
+      // Po 2 sekundách skryje obrázek a přesměruje na podivné tlačítko
       setTimeout(() => {
         jumpscareImage.style.display = 'none';
-        button.style.display = 'block';
+        window.location.href = 'sound/podivnetlacitko.html'; // Přesměrování na jinou stránku
       }, 2000); // 2000 ms = 2 sekundy
     });
   </script>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podivné tlačítko</title>
+  <style>
+    /* Základní styly */
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #ffcc00;
+      color: #ff0066;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    /* Podivné tlačítko */
+    #weird-button {
+      background-color: #00ffcc;
+      color: #ff0066;
+      border: 5px dashed #ff0066;
+      padding: 20px 40px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 50px;
+      box-shadow: 0 0 20px #ff0066, 0 0 40px #00ffcc;
+      animation: spin 5s infinite linear, color-change 3s infinite alternate;
+      transform-style: preserve-3d;
+      transition: all 0.5s ease;
+    }
+
+    /* Animace rotace */
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Animace změny barvy */
+    @keyframes color-change {
+      0% {
+        background-color: #00ffcc;
+        color: #ff0066;
+      }
+      50% {
+        background-color: #ff0066;
+        color: #00ffcc;
+      }
+      100% {
+        background-color: #00ffcc;
+        color: #ff0066;
+      }
+    }
+
+    /* Efekt při najetí myší */
+    #weird-button:hover {
+      transform: scale(1.2) rotate(180deg);
+      box-shadow: 0 0 50px #ff0066, 0 0 80px #00ffcc;
+      background-color: #ff0066;
+      color: #00ffcc;
+      border: 5px dotted #00ffcc;
+    }
+
+    /* Efekt při kliknutí */
+    #weird-button:active {
+      transform: scale(0.8) rotate(360deg);
+      background-color: #cc00ff;
+      color: #00ccff;
+      border: 5px double #00ccff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Podivné tlačítko -->
+  <button id="weird-button">Neklikej na mě!</button>
+
+  <script>
+    // JavaScript pro další podivné efekty
+    const button = document.getElementById('weird-button');
+
+    button.addEventListener('click', () => {
+      // Změní text tlačítka
+      button.textContent = "Au! Proč jsi to udělal?";
+
+      // Přidá náhodnou rotaci
+      const randomRotation = Math.floor(Math.random() * 360);
+      button.style.transform = `rotate(${randomRotation}deg) scale(1.5)`;
+
+      // Změní barvu pozadí stránky
+      document.body.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    });
+  </script>
+</body>
+</html>
