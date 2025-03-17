@@ -102,3 +102,37 @@ footer p {
   margin: 0;
   font-size: 0.9rem;
 }
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.character-item {
+  flex: 1 1 calc(33.333% - 40px);
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.character-item img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.character-item h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.character-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
