@@ -136,3 +136,22 @@ footer p {
   line-height: 1.6;
   color: #555;
 }
+section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+section ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.netflix-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.netflix-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
