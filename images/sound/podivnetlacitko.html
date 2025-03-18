@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Podivné tlačítko</title>
+  <title>Ultimátní chaos tlačítko</title>
   <style>
     /* Základní styly */
     body {
@@ -17,6 +17,18 @@
       height: 100vh;
       margin: 0;
       overflow: hidden;
+      animation: bg-pulse 2s infinite alternate;
+      transform-origin: center center;
+    }
+
+    /* Animace pulzujícího pozadí */
+    @keyframes bg-pulse {
+      0% {
+        background-color: #ffcc00;
+      }
+      100% {
+        background-color: #00ccff;
+      }
     }
 
     /* Podivné tlačítko */
@@ -102,8 +114,34 @@
   <script>
     // JavaScript pro další podivné efekty
     const button = document.getElementById('weird-button');
+    const audio = new Audio('https://www.soundjay.com/button/beep-07.mp3'); // Zvukový efekt
+
+    // Rotace celého prohlížeče
+    let rotation = 0;
+    setInterval(() => {
+      rotation += 1;
+      document.body.style.transform = `rotate(${rotation}deg)`;
+    }, 50);
+
+    // Multiplikace tlačítek při najetí myší
+    button.addEventListener('mousemove', (e) => {
+      const newButton = button.cloneNode(true);
+      newButton.style.position = 'absolute';
+      newButton.style.left = `${e.clientX}px`;
+      newButton.style.top = `${e.clientY}px`;
+      newButton.style.transform = `rotate(${Math.random() * 360}deg) scale(${Math.random() * 2})`;
+      document.body.appendChild(newButton);
+
+      // Odstranění tlačítek po 5 sekundách
+      setTimeout(() => {
+        newButton.remove();
+      }, 5000);
+    });
 
     button.addEventListener('click', () => {
+      // Přehrát zvukový efekt
+      audio.play();
+
       // Změní text tlačítka
       button.textContent = "Au! Proč jsi to udělal?";
 
@@ -129,14 +167,16 @@
       const borderStyles = ['dashed', 'dotted', 'double', 'groove', 'ridge', 'inset', 'outset'];
       const randomBorderStyle = borderStyles[Math.floor(Math.random() * borderStyles.length)];
       button.style.borderStyle = randomBorderStyle;
+
+      // Přidá náhodný stín
+      const randomShadow = `${Math.random() * 20}px ${Math.random() * 20}px ${Math.random() * 20}px rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, ${Math.random()})`;
+      button.style.boxShadow = randomShadow;
     });
 
-    // Přidá efekt náhodného pohybu tlačítka při najetí myší
-    button.addEventListener('mousemove', () => {
-      const randomX = Math.floor(Math.random() * 20) - 10;
-      const randomY = Math.floor(Math.random() * 20) - 10;
-      button.style.transform = `translate(${randomX}px, ${randomY}px)`;
-    });
+    // Přidá náhodné blikání tlačítka
+    setInterval(() => {
+      button.style.visibility = (button.style.visibility === 'hidden' ? 'visible' : 'hidden');
+    }, 200);
   </script>
 </body>
 </html>
